@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compilador jrxml 3.5.3</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <img src="./logo.png" alt="Logo" class="logo" />
+      <h1>Compilador jrxml 3.5.3</h1>
+      <p>
+        Esta ferramenta utiliza uma versão legada do Java para compilar arquivos
+        <strong>.jrxml</strong> em <strong>.jasper</strong>, garantindo compatibilidade
+        com sistemas antigos baseados em JasperReports.
+      </p>
+    </header>
+
+    <section class="form">
+
+      <div class="field">
+        <label>Java Home</label>
+        <div class="input-group">
+          <input id="javaHome" readonly />
+          <button onclick="selectJava()">Selecionar</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Arquivo jrxml</label>
+        <div class="input-group">
+          <input id="jrxmlFile" readonly />
+          <button onclick="selectJrxml()">Selecionar</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Diretório de saída</label>
+        <div class="input-group">
+          <input id="outputDir" readonly />
+          <button onclick="selectOutput()">Selecionar</button>
+        </div>
+      </div>
+
+      <button class="compile" onclick="compile()">Compilar</button>
+
+      <div id="status" class="status"></div>
+
+    </section>
+
+    <footer>
+        Maurício de Moura dos Santos | Maryane de Castro Lima | 2026
+    </footer>
+
+  </div>
+
+  <!-- Modal de erro -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Erro na compilação</h2>
+      <pre id="modalMessage"></pre>
+      <button onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

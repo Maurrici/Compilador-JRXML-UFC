@@ -1,0 +1,134 @@
+* {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+}
+
+body {
+        margin: 0;
+        background: #ffffff;
+        color: #003a5f;
+}
+
+section {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 20px;
+}
+
+header {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+}
+
+footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #003a5f;
+        color: #fff;
+        text-align: center;
+}
+
+.logo {
+        height: 60px;
+        margin-bottom: 10px;
+}
+
+header h1 {
+        margin: 10px 0;
+}
+
+header p {
+        font-size: 14px;
+        line-height: 1.6;
+}
+
+.form .field {
+        margin-bottom: 20px;
+}
+
+label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+}
+
+.input-group {
+        display: flex;
+        gap: 10px;
+}
+
+input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
+
+button {
+        padding: 10px 16px;
+        background: #003a5f;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+button:hover {
+        opacity: 0.9;
+}
+
+.compile {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+}
+
+.status {
+        margin-top: 15px;
+        font-weight: 600;
+}
+
+.status.success {
+        color: #2e7d32;
+}
+
+.status.error {
+        color: #c62828;
+}
+
+/* Modal */
+
+.modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.modal.hidden {
+        display: none;
+}
+
+.modal-content {
+        background: #fff;
+        padding: 20px;
+        width: 500px;
+        border-radius: 6px;
+}
+
+.modal-content h2 {
+        margin-top: 0;
+        color: #c62828;
+}
+
+.modal-content pre {
+        background: #f5f5f5;
+        padding: 10px;
+        max-height: 200px;
+        overflow: auto;
+}

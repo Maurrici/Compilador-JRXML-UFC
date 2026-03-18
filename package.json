@@ -1,0 +1,41 @@
+{
+  "name": "ufc-compiler-jrxml",
+  "productName": "UFC Compilador JRXML",
+  "version": "1.3.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "br.com.jasper.compiler",
+    "asar": true,
+    "extraResources": [
+      {
+        "from": "java",
+        "to": "java"
+      }
+    ],
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility",
+      "icon": "icon.png"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^40.1.0",
+    "electron-builder": "^26.7.0"
+  },
+  "dependencies": {
+    "electron-store": "^11.0.2"
+  }
+}
