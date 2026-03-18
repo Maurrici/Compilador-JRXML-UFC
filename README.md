@@ -7,6 +7,10 @@ Aplicação desktop desenvolvida para compilar arquivos .jrxml utilizando Jasper
 Ferramentas modernas do JasperReports geram arquivos .jasper incompatíveis com sistemas antigos.
 Este projeto resolve esse problema permitindo compilar .jrxml na versão correta, evitando falhas em sistemas legados.
 
+## Downloads
+
+- [Windowns](https://github.com/Maurrici/Compilador-JRXML-UFC/releases/latest)
+
 --------------------------------------------------
 
 ## Como rodar o projeto
