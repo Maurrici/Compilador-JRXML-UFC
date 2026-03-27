@@ -6,8 +6,14 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+<<<<<<< HEAD
+    "start-linux": "electron main-linux.js --no-sandbox",
+    "build": "electron-builder",
+    "build-linux": "electron-builder --linux -c.extraMetadata.main=main-linux.js"  
+=======
     "build": "electron-builder",
     "build-linux": "electron-builder --linux"
+>>>>>>> fa0206acf6d42453fc5f5a9f665e5eb14d7a4a97
   },
   "build": {
     "appId": "br.com.jasper.compiler",
@@ -29,7 +35,11 @@
     }
   },
   "keywords": [],
+<<<<<<< HEAD
+  "author": "Mauricio dos Santos, Maryane Lima <@sti.ufc.br>",
+=======
   "author": "",
+>>>>>>> fa0206acf6d42453fc5f5a9f665e5eb14d7a4a97
   "license": "ISC",
   "devDependencies": {
     "electron": "^40.1.0",
