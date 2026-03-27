@@ -49,7 +49,7 @@ npm run build
 
 ```Javascript
 npm install
-npm start-linux
+npm run start-linux
 ```
 
 ### Gerar builds
