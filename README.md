@@ -8,12 +8,10 @@ Ferramentas modernas do JasperReports geram arquivos .jasper incompatíveis com 
 Este projeto resolve esse problema permitindo compilar .jrxml na versão correta, evitando falhas em sistemas legados.
 
 ## Downloads
-
-- [Windowns](https://github.com/Maurrici/Compilador-JRXML-UFC/releases/latest)
+- [Windows](https://github.com/Maurrici/Compilador-JRXML-UFC/releases/latest)
+- [Linux](https://github.com/rios-natalia/Compilador-JRXML-UFC/releases/latest)
 
 --------------------------------------------------
-
-## Como rodar o projeto
 
 ### Pré-requisitos
 
@@ -25,11 +23,43 @@ Verifique:
 node -v
 java -version
 ```
+
+--------------------------------------------------
+
+## Como rodar o projeto - Windows
+
 ### Executar em modo desenvolvimento
 
 ```Javascript
 npm install
 npm start
+```
+
+### Gerar builds
+
+#### Windows
+```Javascript
+npm run build
+```
+--------------------------------------------------
+
+## Como rodar o projeto - Linux
+
+### Executar em modo desenvolvimento
+
+```Javascript
+npm install
+npm run start-linux
+```
+
+### Gerar builds
+```Javascript
+npm run build-linux
+```
+
+**OBS**: Caso ao executar o `.deb` ou o `.AppImage` a tela fique branca e não carregue, execute pelo terminal usando a flag `--no-sandbox`:
+```Javascript
+ufc-compiler-jrxml --no-sandbox
 ```
 
 --------------------------------------------------
@@ -40,6 +70,7 @@ npm start
 ```Javascript
 npm run build
 ```
+
 ### Linux
 
 (Recomendado rodar em ambiente Linux - WSL, VM ou CI)
